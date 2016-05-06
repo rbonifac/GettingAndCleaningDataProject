@@ -30,6 +30,7 @@ therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a ve
 time and frequency domain. See 'features_info.txt' for more details. 
 
 For each record it is provided:
+
 ======================================
 
 - Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
@@ -39,6 +40,7 @@ For each record it is provided:
 - An identifier of the subject who carried out the experiment.
 
 The dataset includes the following files:
+
 =========================================
 - 'README.txt'
 - 'features_info.txt': Shows information about the variables used on the feature vector.
@@ -124,7 +126,7 @@ tBodyGyroJerkMean
 The complete list of variables of each feature vector is available in 'features.txt'
 Additional info is included in the info files provided in the compressed file.
 
-## Creating a new Tidy Data Set
+### Creating a new Tidy Data Set
 
 ===================================
 
@@ -150,7 +152,7 @@ The following steps were executed by the run_analysis.R script:
 	[1] "5.groupedMeanStdData is the tidy dataset created for a separate data with a summary of avg values per subject and activity"
 	[1] " The file mean_std_groupby_subject_activity.txt was created which contains new tidy data set"
 
-## Description for updated variables in the tidy dataset 
+### Description for updated variables in the tidy dataset 
 
 These variables have the same description provided in the raw data. They have been enhanced to provide easier readability:
 
@@ -236,8 +238,8 @@ subject is the individual who used the device. Activity is the activity descript
 [72] "FrequencyBodyAccelerometerMagnitude-MeanFrequency"        
 [73] "FrequencyBodyAccelerometerJerkMagnitude-Mean"             
 [74] "FrequencyBodyAccelerometerJerkMagnitude-StandardDeviation"
-[75] "FrequencyBodyAccelerometerJerkMagnitude-MeanFrequency"    
-[76] "FrequencyBodyGyrometerMagnitude-Mean"                     
+[75] "FrequencyBodyAccelerometerJerkMagnitude-MeanFrequency"
+[76] "FrequencyBodyGyrometerMagnitude-Mean"                  
 [77] "FrequencyBodyGyrometerMagnitude-StandardDeviation"        
 [78] "FrequencyBodyGyrometerMagnitude-MeanFrequency"            
 [79] "FrequencyBodyGyrometerJerkMagnitude-Mean"                 
