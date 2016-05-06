@@ -1,6 +1,9 @@
-## Codebook for the Getting and Cleanning Data Project Course
+## Codebook-Getting and Cleanning Data Project Course
 
 ## Raw Data collection background
+
+This info was provided by the following research project and team:
+
 ==================================================================
  Human Activity Recognition Using Smartphones Dataset Version 1.0
 
