@@ -24,7 +24,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 ### How to generate the tidy data set:
 
-- Download files for the GettingAndCleaningDataProject repo in [github] (https://github.com/rbonifac/GettingAndCleaningDataProject)
+- Download files for the [GettingAndCleaningDataProject] repo in Github (https://github.com/rbonifac/GettingAndCleaningDataProject)
 - Download raw data from source web link for [Raw Data] (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 - Extract compressed file into the "UCI HAR Dataset" folder.
 - Place the run_analysis.R script on the parent folder of the "UCI HAR Dataset" folder.
