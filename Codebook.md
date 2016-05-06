@@ -54,7 +54,8 @@ Every row shows a 128 element vector. The same description applies for the 'tota
 - 'train/Inertial Signals/body_acc_x_train.txt': The body acceleration signal obtained by subtracting the gravity from the total acceleration. 
 - 'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second. 
 
-## Feature Selection 
+### Feature Selection
+ 
 =================================================================================
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) 
@@ -120,9 +121,8 @@ tBodyGyroJerkMean
 The complete list of variables of each feature vector is available in 'features.txt'
 Additional info is included in the info files provided in the compressed file.
 
-=========================================================================================================================
-
 ## Creating a new Tidy Data Set
+
 ===================================
 
 The following steps were executed by the run_analysis.R script:
@@ -138,7 +138,7 @@ The following steps were executed by the run_analysis.R script:
  k.New dataset groupedMeanStdData was saved into the file mean_std_groupby_subject_activity.txt.
 - Note the train/test files under respective "Inertial Signals" folder were not in the scope of this excersice.
 
-## Here is the output of the run_analysis.R script which provides the names of data tables and files created by the run_analysis.R script:
+### Output of the run_analysis.R script which provides the names of data tables and files created by the run_analysis.R script:
 
 	[1] "1.mergedData is the dataset with merged data from train and test data files"
 	[1] "2.meanStdData is a subset of the mergedData set with the mean/std variables only"
@@ -156,7 +156,7 @@ subject is the individual who used the device. Activity is the activity descript
  [1] "subject" -values 1 to 30.                                                
  [2] "activity" - values WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING                                               
 
--Time Domain measurement variables: the value represents average of mean and std of each variable:
+-Time Domain measurement variables: the value represents average of mean and std per subject per activity:
 
  [3] "TimeBodyAccelerometer-Mean-X"                             
  [4] "TimeBodyAccelerometer-Mean-Y"                             
@@ -199,7 +199,7 @@ subject is the individual who used the device. Activity is the activity descript
 [41] "TimeBodyGyrometerJerkMagnitude-Mean"                      
 [42] "TimeBodyGyrometerJerkMagnitude-StandardDeviation" 
 
--Frequency Domain measurement variables. The value represents average of mean and std of each variable:
+-Frequency Domain measurement variables. The value represents average of mean and std per subject per activity:
     
 [43] "FrequencyBodyAccelerometer-Mean-X"                        
 [44] "FrequencyBodyAccelerometer-Mean-Y"                        
