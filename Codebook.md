@@ -126,21 +126,20 @@ tBodyGyroJerkMean
 The complete list of variables of each feature vector is available in 'features.txt'
 Additional info is included in the info files provided in the compressed file.
 
-### Creating a new Tidy Data Set
+### Generating the new Tidy Data Set
 
-===================================
 
 The following steps were executed by the run_analysis.R script:
- a.The activity and features labels files were loaded into R data tables. Descriptive names were given to the variable names to avoid any confusion.
- b.The test data files for measurements, activity and subject were loaded into separate r tables 
- c.The variable names were updated based on provided features labels.
- d.The same steps(b,c) were performed for the training files and merged into the trainData dataset.
- e.The merged test and train data tables were subsequently merged into the mergedData data table. This is the first dataset created.
- f.The variables for mean and standard deviation were extracted from the mergedData and placed into the meanStdData dataset.
- g.Activity labels were merged with the meanStdData to provide better understanding of the activities performed. 
- h.Variable names were enhanced to replace abbreviation and special characters.
- i.New tidy dataset was created with the average was calculated for the meassurement variables by subject and activity. See variable description below.
- k.New dataset groupedMeanStdData was saved into the file mean_std_groupby_subject_activity.txt.
+ [a].The activity and features labels files were loaded into R data tables. Descriptive names were given to the variable names to avoid any confusion.
+ [b].The test data files for measurements, activity and subject were loaded into separate r tables 
+ [c].The variable names were updated based on provided features labels.
+ [d].The same steps(b,c) were performed for the training files and merged into the trainData dataset.
+ [e].The merged test and train data tables were subsequently merged into the mergedData data table. This is the first dataset created.
+ [f].The variables for mean and standard deviation were extracted from the mergedData and placed into the meanStdData dataset.
+ [g].Activity labels were merged with the meanStdData to provide better understanding of the activities performed. 
+ [h].Variable names were enhanced to replace abbreviation and special characters.
+ [i].New tidy dataset was created with the average was calculated for the meassurement variables by subject and activity. See variable description below.
+ [k].New dataset groupedMeanStdData was saved into the file mean_std_groupby_subject_activity.txt.
 - Note the train/test files under respective "Inertial Signals" folder were not in the scope of this excersice.
 
 ### Output of the run_analysis.R script which provides the names of data tables and files created by the run_analysis.R script:
