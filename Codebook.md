@@ -283,6 +283,7 @@ subject is the individual who used the device. Activity is the activity descript
 [72] "FrequencyBodyAccelerometerMagnitude-MeanFrequency"        
 [73] "FrequencyBodyAccelerometerJerkMagnitude-Mean"              
 [74] "FrequencyBodyAccelerometerJerkMagnitude-StandardDeviation" 
+
 [75] "FrequencyBodyAccelerometerJerkMagnitude-MeanFrequency"    
 [76] "FrequencyBodyGyrometerMagnitude-Mean"                            
 [77] "FrequencyBodyGyrometerMagnitude-StandardDeviation"        
