@@ -1,21 +1,18 @@
-### Codebook-Getting and Cleanning Data Project Course
+## Codebook-Getting and Cleanning Data Project Course
 
-### Raw Data collection background
+## Raw Data collection background
 
 This info was provided by the following research project and team:
-
-==================================================================
+------------------------------------------------------------------
  Human Activity Recognition Using Smartphones Dataset Version 1.0
-
-==================================================================
+------------------------------------------------------------------
 Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
 Smartlab - Non Linear Complex Systems Laboratory
 DITEN - Università degli Studi di Genova.
 Via Opera Pia 11A, I-16145, Genoa, Italy.
 activityrecognition@smartlab.ws
 www.smartlab.ws
-
-==================================================================
+------------------------------------------------------------------
 
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities 
 (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its 
@@ -56,10 +53,8 @@ Every row shows a 128 element vector. The same description applies for the 'tota
 - 'train/Inertial Signals/body_acc_x_train.txt': The body acceleration signal obtained by subtracting the gravity from the total acceleration. 
 - 'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second. 
 
-### Feature Selection
- 
-=================================================================================
-
+## Feature Selection
+----------------------------------------------------------------------------------------------------
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) 
 were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. 
 Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a 
@@ -74,87 +69,51 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
-tBodyAcc-XYZ 
-
-tGravityAcc-XYZ 
-
-tBodyAccJerk-XYZ
- 
-tBodyGyro-XYZ
- 
-tBodyGyroJerk-XYZ
- 
-tBodyAccMag
- 
-tGravityAccMag
-
-tBodyAccJerkMag
-
-tBodyGyroMag
-
-tBodyGyroJerkMag
-
-fBodyAcc-XYZ
-
-fBodyAccJerk-XYZ
-
-fBodyGyro-XYZ
-
-fBodyAccMag
-
-fBodyAccJerkMag
-
-fBodyGyroMag
-
-fBodyGyroJerkMag
+-tBodyAcc-XYZ 
+-tGravityAcc-XYZ 
+-tBodyAccJerk-XYZ
+-tBodyGyro-XYZ
+-tBodyGyroJerk-XYZ
+-tBodyAccMag
+-tGravityAccMag
+-tBodyAccJerkMag
+-tBodyGyroMag
+-tBodyGyroJerkMag
+-fBodyAcc-XYZ
+-fBodyAccJerk-XYZ
+-fBodyGyro-XYZ
+-fBodyAccMag
+-fBodyAccJerkMag
+-fBodyGyroMag
+-fBodyGyroJerkMag
 
 
 The set of variables that were estimated from these signals are: 
 
 mean(): Mean value
-
 std(): Standard deviation
-
 mad(): Median absolute deviation 
-
 max(): Largest value in array
-
 min(): Smallest value in array
-
 sma(): Signal magnitude area
-
 energy(): Energy measure. Sum of the squares divided by the number of values. 
-
 iqr(): Interquartile range 
-
 entropy(): Signal entropy
-
 arCoeff(): Autorregresion coefficients with Burg order equal to 4
-
 correlation(): correlation coefficient between two signals
-
 maxInds(): index of the frequency component with largest magnitude
-
 meanFreq(): Weighted average of the frequency components to obtain a mean frequency
-
 skewness(): skewness of the frequency domain signal 
-
 kurtosis(): kurtosis of the frequency domain signal 
-
 bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
-
 angle(): Angle between to vectors.
 
 Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
 
 gravityMean
-
 tBodyAccMean
-
 tBodyAccJerkMean
-
 tBodyGyroMean
-
 tBodyGyroJerkMean
 
 
@@ -166,29 +125,20 @@ Additional info is included in the info files provided in the compressed file.
 
 The following steps were executed by the run_analysis.R script:
 
- [a].The activity and features labels files were loaded into R data tables. Descriptive names were given to the variable names to avoid any confusion.
-
- [b].The test data files for measurements, activity and subject were loaded into separate r tables 
-
- [c].The variable names were updated based on provided features labels.
-
- [d].The same steps(b,c) were performed for the training files and merged into the trainData dataset.
-
- [e].The merged test and train data tables were subsequently merged into the mergedData data table. This is the first dataset created.
-
- [f].The variables for mean and standard deviation were extracted from the mergedData and placed into the meanStdData dataset.
-
- [g].Activity labels were merged with the meanStdData to provide better understanding of the activities performed. 
-
- [h].Variable names were enhanced to replace abbreviation and special characters.
-
- [i].New tidy dataset was created with the average was calculated for the meassurement variables by subject and activity. See variable description below.
-
- [k].New dataset groupedMeanStdData was saved into the file mean_std_groupby_subject_activity.txt.
+ -a.The activity and features labels files were loaded into R data tables. Descriptive names were given to the variable names to avoid any confusion.
+ -b.The test data files for measurements, activity and subject were loaded into separate r tables 
+ -c.The variable names were updated based on provided features labels.
+ -d.The same steps(b,c) were performed for the training files and merged into the trainData dataset.
+ -e.The merged test and train data tables were subsequently merged into the mergedData data table. This is the first dataset created.
+ -f.The variables for mean and standard deviation were extracted from the mergedData and placed into the meanStdData dataset.
+ -g.Activity labels were merged with the meanStdData to provide better understanding of the activities performed. 
+ -h.Variable names were enhanced to replace abbreviation and special characters.
+ -i.New tidy dataset was created with the average was calculated for the meassurement variables by subject and activity. See variable description below.
+ -k.New dataset groupedMeanStdData was saved into the file mean_std_groupby_subject_activity.txt.
 
 - Note the train/test files under respective "Inertial Signals" folder were not in the scope of this excersice.
 
-### Output of the run_analysis.R script which provides the names of data tables and files created by the run_analysis.R script:
+## Output of the run_analysis.R script which provides the names of data tables and files created by the run_analysis.R script:
 
 	[1] "1.mergedData is the dataset with merged data from train and test data files"
 	[1] "2.meanStdData is a subset of the mergedData set with the mean/std variables only"
@@ -197,7 +147,7 @@ The following steps were executed by the run_analysis.R script:
 	[1] "5.groupedMeanStdData is the tidy dataset created for a separate data with a summary of avg values per subject and activity"
 	[1] " The file mean_std_groupby_subject_activity.txt was created which contains new tidy data set"
 
-### Description for updated variables in the tidy dataset 
+## Description for updated variables in the tidy dataset 
 
 These variables have the same description provided in the raw data. They have been enhanced to provide easier readability:
 
@@ -283,7 +233,6 @@ subject is the individual who used the device. Activity is the activity descript
 [72] "FrequencyBodyAccelerometerMagnitude-MeanFrequency"        
 [73] "FrequencyBodyAccelerometerJerkMagnitude-Mean"              
 [74] "FrequencyBodyAccelerometerJerkMagnitude-StandardDeviation" 
-
 [75] "FrequencyBodyAccelerometerJerkMagnitude-MeanFrequency"    
 [76] "FrequencyBodyGyrometerMagnitude-Mean"                            
 [77] "FrequencyBodyGyrometerMagnitude-StandardDeviation"        
@@ -292,4 +241,4 @@ subject is the individual who used the device. Activity is the activity descript
 [80] "FrequencyBodyGyrometerJerkMagnitude-StandardDeviation"    
 [81] "FrequencyBodyGyrometerJerkMagnitude-MeanFrequency" 
 
-Good Luck!
+-----------------------------------------------------------------------
