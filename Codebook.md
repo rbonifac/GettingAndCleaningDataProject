@@ -2,8 +2,8 @@
 
 ## Raw Data collection background
 ==================================================================
- Human Activity Recognition Using Smartphones Dataset
- Version 1.0
+ Human Activity Recognition Using Smartphones Dataset Version 1.0
+
 ==================================================================
 Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
 Smartlab - Non Linear Complex Systems Laboratory
@@ -11,6 +11,7 @@ DITEN - Università degli Studi di Genova.
 Via Opera Pia 11A, I-16145, Genoa, Italy.
 activityrecognition@smartlab.ws
 www.smartlab.ws
+
 ==================================================================
 
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities 
@@ -118,6 +119,7 @@ tBodyGyroJerkMean
 
 The complete list of variables of each feature vector is available in 'features.txt'
 Additional info is included in the info files provided in the compressed file.
+
 =========================================================================================================================
 
 ## Creating a new Tidy Data Set
@@ -136,7 +138,7 @@ The following steps were executed by the run_analysis.R script:
  k.New dataset groupedMeanStdData was saved into the file mean_std_groupby_subject_activity.txt.
 - Note the train/test files under respective "Inertial Signals" folder were not in the scope of this excersice.
 
-## Here is the output of the run_analysis.R script which provides the names of data tables and files:
+## Here is the output of the run_analysis.R script which provides the names of data tables and files created by the run_analysis.R script:
 
 	[1] "1.mergedData is the dataset with merged data from train and test data files"
 	[1] "2.meanStdData is a subset of the mergedData set with the mean/std variables only"
@@ -150,9 +152,12 @@ The following steps were executed by the run_analysis.R script:
 These variables have the same description provided in the raw data. They have been enhanced to provide easier readability:
 
 subject is the individual who used the device. Activity is the activity description performed by the subject.
+
  [1] "subject" -values 1 to 30.                                                
  [2] "activity" - values WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING                                               
---Time Domain measurement variables: the value represents average of mean and std of each variable
+
+-Time Domain measurement variables: the value represents average of mean and std of each variable:
+
  [3] "TimeBodyAccelerometer-Mean-X"                             
  [4] "TimeBodyAccelerometer-Mean-Y"                             
  [5] "TimeBodyAccelerometer-Mean-Z"                             
@@ -194,7 +199,8 @@ subject is the individual who used the device. Activity is the activity descript
 [41] "TimeBodyGyrometerJerkMagnitude-Mean"                      
 [42] "TimeBodyGyrometerJerkMagnitude-StandardDeviation" 
 
--Frequency Domain measurement variables. The value represents average of mean and std of each variable       
+-Frequency Domain measurement variables. The value represents average of mean and std of each variable:
+    
 [43] "FrequencyBodyAccelerometer-Mean-X"                        
 [44] "FrequencyBodyAccelerometer-Mean-Y"                        
 [45] "FrequencyBodyAccelerometer-Mean-Z"                        
