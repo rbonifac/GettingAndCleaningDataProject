@@ -69,52 +69,52 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
--tBodyAcc-XYZ 
--tGravityAcc-XYZ 
--tBodyAccJerk-XYZ
--tBodyGyro-XYZ
--tBodyGyroJerk-XYZ
--tBodyAccMag
--tGravityAccMag
--tBodyAccJerkMag
--tBodyGyroMag
--tBodyGyroJerkMag
--fBodyAcc-XYZ
--fBodyAccJerk-XYZ
--fBodyGyro-XYZ
--fBodyAccMag
--fBodyAccJerkMag
--fBodyGyroMag
--fBodyGyroJerkMag
+- tBodyAcc-XYZ 
+- tGravityAcc-XYZ 
+- tBodyAccJerk-XYZ
+- tBodyGyro-XYZ
+- tBodyGyroJerk-XYZ
+- tBodyAccMag
+- tGravityAccMag
+- tBodyAccJerkMag
+- tBodyGyroMag
+- tBodyGyroJerkMag
+- fBodyAcc-XYZ
+- fBodyAccJerk-XYZ
+- fBodyGyro-XYZ
+- fBodyAccMag
+- fBodyAccJerkMag
+- fBodyGyroMag
+- fBodyGyroJerkMag
 
 
 The set of variables that were estimated from these signals are: 
 
-mean(): Mean value
-std(): Standard deviation
-mad(): Median absolute deviation 
-max(): Largest value in array
-min(): Smallest value in array
-sma(): Signal magnitude area
-energy(): Energy measure. Sum of the squares divided by the number of values. 
-iqr(): Interquartile range 
-entropy(): Signal entropy
-arCoeff(): Autorregresion coefficients with Burg order equal to 4
-correlation(): correlation coefficient between two signals
-maxInds(): index of the frequency component with largest magnitude
-meanFreq(): Weighted average of the frequency components to obtain a mean frequency
-skewness(): skewness of the frequency domain signal 
-kurtosis(): kurtosis of the frequency domain signal 
-bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
-angle(): Angle between to vectors.
+- mean(): Mean value
+- std(): Standard deviation
+- mad(): Median absolute deviation 
+- max(): Largest value in array
+- min(): Smallest value in array
+- sma(): Signal magnitude area
+- energy(): Energy measure. Sum of the squares divided by the number of values. 
+- iqr(): Interquartile range 
+- entropy(): Signal entropy
+- arCoeff(): Autorregresion coefficients with Burg order equal to 4
+- correlation(): correlation coefficient between two signals
+- maxInds(): index of the frequency component with largest magnitude
+- meanFreq(): Weighted average of the frequency components to obtain a mean frequency
+- skewness(): skewness of the frequency domain signal 
+- kurtosis(): kurtosis of the frequency domain signal 
+- bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
+- angle(): Angle between to vectors.
 
 Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
 
-gravityMean
-tBodyAccMean
-tBodyAccJerkMean
-tBodyGyroMean
-tBodyGyroJerkMean
+- gravityMean
+- tBodyAccMean
+- tBodyAccJerkMean
+- tBodyGyroMean
+- tBodyGyroJerkMean
 
 
 The complete list of variables of each feature vector is available in 'features.txt'
@@ -125,18 +125,18 @@ Additional info is included in the info files provided in the compressed file.
 
 The following steps were executed by the run_analysis.R script:
 
- -a.The activity and features labels files were loaded into R data tables. Descriptive names were given to the variable names to avoid any confusion.
- -b.The test data files for measurements, activity and subject were loaded into separate r tables 
- -c.The variable names were updated based on provided features labels.
- -d.The same steps(b,c) were performed for the training files and merged into the trainData dataset.
- -e.The merged test and train data tables were subsequently merged into the mergedData data table. This is the first dataset created.
- -f.The variables for mean and standard deviation were extracted from the mergedData and placed into the meanStdData dataset.
- -g.Activity labels were merged with the meanStdData to provide better understanding of the activities performed. 
- -h.Variable names were enhanced to replace abbreviation and special characters.
- -i.New tidy dataset was created with the average was calculated for the meassurement variables by subject and activity. See variable description below.
- -k.New dataset groupedMeanStdData was saved into the file mean_std_groupby_subject_activity.txt.
+ - a.The activity and features labels files were loaded into R data tables. Descriptive names were given to the variable names to avoid any confusion.
+ - b.The test data files for measurements, activity and subject were loaded into separate r tables 
+ - c.The variable names were updated based on provided features labels.
+ - d.The same steps(b,c) were performed for the training files and merged into the trainData dataset.
+ - e.The merged test and train data tables were subsequently merged into the mergedData data table. This is the first dataset created.
+ - f.The variables for mean and standard deviation were extracted from the mergedData and placed into the meanStdData dataset.
+ - g.Activity labels were merged with the meanStdData to provide better understanding of the activities performed. 
+ - h.Variable names were enhanced to replace abbreviation and special characters.
+ - i.New tidy dataset was created with the average was calculated for the meassurement variables by subject and activity. See variable description below.
+ - k.New dataset groupedMeanStdData was saved into the file mean_std_groupby_subject_activity.txt.
 
-- Note the train/test files under respective "Inertial Signals" folder were not in the scope of this excersice.
+- *Note the train/test files under respective "Inertial Signals" folder were not in the scope of this excersice.
 
 ## Output of the run_analysis.R script which provides the names of data tables and files created by the run_analysis.R script:
 
@@ -232,7 +232,7 @@ subject is the individual who used the device. Activity is the activity descript
 [71] "FrequencyBodyAccelerometerMagnitude-StandardDeviation"    
 [72] "FrequencyBodyAccelerometerMagnitude-MeanFrequency"        
 [73] "FrequencyBodyAccelerometerJerkMagnitude-Mean"              
-[74] "FrequencyBodyAccelerometerJerkMagnitude-StandardDeviation" 
+[74] "FrequencyBodyAccelerometerJerkMagnitude-StandardDeviation"
 [75] "FrequencyBodyAccelerometerJerkMagnitude-MeanFrequency"    
 [76] "FrequencyBodyGyrometerMagnitude-Mean"                            
 [77] "FrequencyBodyGyrometerMagnitude-StandardDeviation"        
