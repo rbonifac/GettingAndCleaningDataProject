@@ -25,10 +25,10 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 ### How to generate the tidy data set:
 
-- From Github download the files for the [GettingAndCleaningDataProject] (https://github.com/rbonifac/GettingAndCleaningDataProject)
-- Download raw data from source web link for [Raw Data] (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
-- Extract compressed file into the "UCI HAR Dataset" folder.
-- Place the run_analysis.R script on the parent folder of the "UCI HAR Dataset" folder.
-- Double click on the run_analysis.R file and will automatically opens in the R console. Type source('run_analysis.R') to execute the script.
-- The file mean_std_groupby_subject_activity.txt with new tidy data set is created on the parent folder of "UCI HAR Dataset" folder.
-- The run_analysis.R script provides an output which lists the datasets and files created during this process. Output is included in codebook document.
+- a.From Github download the files for the [GettingAndCleaningDataProject] (https://github.com/rbonifac/GettingAndCleaningDataProject)
+- b.Download raw data from source web link for [Raw Data] (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
+- c.Extract compressed file into the "UCI HAR Dataset" folder.
+- d.Place the run_analysis.R script on the parent folder of the "UCI HAR Dataset" folder.
+- e.Double click on the run_analysis.R file and will automatically opens in the R console. Type source('run_analysis.R') to execute the script.
+- f.The file mean_std_groupby_subject_activity.txt with new tidy data set is created on the parent folder of "UCI HAR Dataset" folder.
+- g.The run_analysis.R script provides an output which lists the datasets and files created during this process. Output is included in codebook document.
