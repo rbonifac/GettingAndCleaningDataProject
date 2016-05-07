@@ -2,10 +2,10 @@
 
 ## Raw Data collection background
 
-This info was provided by the following research project team:
+The following information was provided by the research project team below:
+Project:Human Activity Recognition Using Smartphones Dataset Version 1.0
 
- Human Activity Recognition Using Smartphones Dataset Version 1.0
-
+Team:
 Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
 Smartlab - Non Linear Complex Systems Laboratory
 DITEN - Università degli Studi di Genova.
@@ -50,7 +50,6 @@ The following files are available for the train and test data. Their description
 - 'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second. 
 
 ## Feature Selection
-----------------------------------------------------------------------------------------------------
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) 
 were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. 
 Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a 
@@ -113,7 +112,6 @@ The complete list of variables of each feature vector is available in 'features.
 Additional info is included in the info files provided in the compressed file.
 
 ## Generating the new Tidy Data Set
-
 The following steps were executed by the run_analysis.R script:
  - a.The activity and features labels files were loaded into R data tables. Descriptive names were given to the variable names to avoid any confusion.
  - b.The test data files for measurements, activity and subject were loaded into separate r tables 
@@ -128,7 +126,8 @@ The following steps were executed by the run_analysis.R script:
 
 - *Note the train/test files under respective "Inertial Signals" folder were not in the scope of this excersice.
 
-## Output of the run_analysis.R script which provides the names of data tables and files created by the run_analysis.R script:
+### Output of the run_analysis.R script 
+This output provides the names of data sets/tables and files created by the run_analysis.R script:
 
 	[1] "1.mergedData is the dataset with merged data from train and test data files"
 	[1] "2.meanStdData is a subset of the mergedData set with the mean/std variables only"
@@ -138,7 +137,6 @@ The following steps were executed by the run_analysis.R script:
 	[1] " The file mean_std_groupby_subject_activity.txt was created which contains new tidy data set"
 
 ## Description for updated variables in the tidy dataset 
-
 These variables have the same description provided in the raw data. They have been enhanced to provide easier readability:
 
 subject is the individual who used the device. Activity is the activity description performed by the subject.
